@@ -2,7 +2,7 @@
 #define Motor_Configuration_H
 
 
-#define _2PI 6.2818530719f
+#define _2PI 6.28318530719f
 #define _sqrt_3 1.7320578f
 
 #define UDC 24.0f
