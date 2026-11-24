@@ -32,6 +32,16 @@ typedef struct
     int Tcmp_V;
     int Tcmp_W;
 
+    float Id;
+    float Iq;
+
+    float IAlpha;
+    float IBeta;
+
+    float Iu;
+    float Iv;
+    float Iw;
+
 }FOC_Parameter_TypeDef;
 
 typedef struct
@@ -64,5 +74,7 @@ void SpeedControl_Param_Init(Vf_Speed_Control_TypeDef *Vf_Speed_Control,uint16_t
 void Vf_SpeedControl_Update(Vf_Speed_Control_TypeDef *Vf_Speed_Control,float *Target_Theta);
 void SVPWM_Select_PWM1(FOC_Parameter_TypeDef *FOC_Parameter);
 void SVPWM_Select_PWM2(FOC_Parameter_TypeDef *FOC_Parameter);
+void Park_Transform(FOC_Parameter_TypeDef *FOC_Parameter);
+void Clarke_Transform(FOC_Parameter_TypeDef *FOC_Parameter);
 
 #endif

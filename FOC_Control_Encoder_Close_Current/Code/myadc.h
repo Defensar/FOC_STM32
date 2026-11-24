@@ -2,6 +2,7 @@
 #define myadc_H
 
 #include "stdint.h"
+#include "FOC_Algorithm.h"
 
 typedef struct 
 {
@@ -26,5 +27,6 @@ typedef struct
 
 void ADC_Init(void);
 void ADC_RUN(myadc_Typedef *myadc_getvalue);
+void ADC_Transform_Value(myadc_Typedef *myadc_getvalue,FOC_Parameter_TypeDef *FOC);
 
 #endif

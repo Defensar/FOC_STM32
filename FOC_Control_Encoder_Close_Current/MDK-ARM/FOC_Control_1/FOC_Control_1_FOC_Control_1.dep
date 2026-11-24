@@ -58,13 +58,13 @@ I (../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc/usbd_cdc.h)(0x6AED41
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ioreq.h)(0x6AED4179)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x6AED4179)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x6AED4179)
-I (../Code/FOC_Algorithm.h)(0x6B01A7E5)
+I (../Code/FOC_Algorithm.h)(0x6B05A304)
 I (../Code/HardWare_Driver.h)(0x6AFDAD71)
-I (../Code/Motor_Configuration.h)(0x6B004577)
+I (../Code/Motor_Configuration.h)(0x6B059A2E)
 I (../Code/Encoder.h)(0x6AFEC145)
 I (../Code/state_machine.h)(0x6B02D8A5)
 I (../Code/TdTracker.h)(0x6AFF0DFE)
-I (../Code/myadc.h)(0x6B03B515)
+I (../Code/myadc.h)(0x6B05A318)
 F (../Core/Src/gpio.c)(0x6B0542F2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\gpio.o --omf_browse foc_control_1\gpio.crf --depend foc_control_1\gpio.d)
 I (../Core/Inc/gpio.h)(0x6AF7FF24)
 I (../Core/Inc/main.h)(0x6AF7FF25)
@@ -266,10 +266,10 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h)(0x6AED4199)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x6AED4199)
 I (../Core/Inc/stm32g4xx_it.h)(0x6B02B088)
 I (../Code/state_machine.h)(0x6B02D8A5)
-I (../Code/Foc_Algorithm.h)(0x6B01A7E5)
+I (../Code/Foc_Algorithm.h)(0x6B05A304)
 I (../Code/Encoder.h)(0x6AFEC145)
 I (../Code/TdTracker.h)(0x6AFF0DFE)
-I (../Code/myadc.h)(0x6B03B515)
+I (../Code/myadc.h)(0x6B05A318)
 F (../Core/Src/stm32g4xx_hal_msp.c)(0x6AF7FF25)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\stm32g4xx_hal_msp.o --omf_browse foc_control_1\stm32g4xx_hal_msp.crf --depend foc_control_1\stm32g4xx_hal_msp.d)
 I (../Core/Inc/main.h)(0x6AF7FF25)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x6AED4199)
@@ -1184,7 +1184,7 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h)(0x6AED4199)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x6AED4199)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h)(0x6AED4199)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x6AED4199)
-F (..\Code\Vofa.c)(0x6B03D5F2)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\vofa.o --omf_browse foc_control_1\vofa.crf --depend foc_control_1\vofa.d)
+F (..\Code\Vofa.c)(0x6B05A4FC)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\vofa.o --omf_browse foc_control_1\vofa.crf --depend foc_control_1\vofa.d)
 I (..\Code\headfile.h)(0x6AFDA2FE)
 I (../Core/Inc/main.h)(0x6AF7FF25)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x6AED4199)
@@ -1239,21 +1239,21 @@ I (../USB_Device/Target/usbd_conf.h)(0x6AF800C9)
 I (D:\Keil5\ARM\ARMCC\include\stdlib.h)(0x5E8E3CC2)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_core.h)(0x6AED4179)
 I (../Middlewares/ST/STM32_USB_Device_Library/Core/Inc/usbd_ctlreq.h)(0x6AED4179)
-I (..\Code\FOC_Algorithm.h)(0x6B01A7E5)
+I (..\Code\FOC_Algorithm.h)(0x6B05A304)
 I (..\Code\HardWare_Driver.h)(0x6AFDAD71)
-I (..\Code\Motor_Configuration.h)(0x6B004577)
+I (..\Code\Motor_Configuration.h)(0x6B059A2E)
 I (..\Code\Encoder.h)(0x6AFEC145)
 I (..\Code\state_machine.h)(0x6B02D8A5)
 I (..\Code\TdTracker.h)(0x6AFF0DFE)
-I (..\Code\myadc.h)(0x6B03B515)
+I (..\Code\myadc.h)(0x6B05A318)
 F (..\Code\Vofa.h)(0x6B03D5D7)()
 F (..\Code\headfile.h)(0x6AFDA2FE)()
-F (..\Code\FOC_Algorithm.c)(0x6B01AB08)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\foc_algorithm.o --omf_browse foc_control_1\foc_algorithm.crf --depend foc_control_1\foc_algorithm.d)
-I (..\Code\FOC_Algorithm.h)(0x6B01A7E5)
+F (..\Code\FOC_Algorithm.c)(0x6B05A318)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\foc_algorithm.o --omf_browse foc_control_1\foc_algorithm.crf --depend foc_control_1\foc_algorithm.d)
+I (..\Code\FOC_Algorithm.h)(0x6B05A304)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (..\Code\Motor_Configuration.h)(0x6B004577)
+I (..\Code\Motor_Configuration.h)(0x6B059A2E)
 I (D:\Keil5\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
-F (..\Code\FOC_Algorithm.h)(0x6B01A7E5)()
+F (..\Code\FOC_Algorithm.h)(0x6B05A304)()
 F (..\Code\HardWare_Driver.c)(0x6B02ED97)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\hardware_driver.o --omf_browse foc_control_1\hardware_driver.crf --depend foc_control_1\hardware_driver.d)
 I (../Core/Inc/tim.h)(0x6AFD1CB0)
 I (../Core/Inc/main.h)(0x6AF7FF25)
@@ -1297,29 +1297,30 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x6AED4199)
 I (../Core/Inc/spi.h)(0x6AFD1CAF)
 I (..\Code\HardWare_Driver.h)(0x6AFDAD71)
 F (..\Code\HardWare_Driver.h)(0x6AFDAD71)()
-F (..\Code\Motor_Configuration.h)(0x6B004577)()
-F (..\Code\state_machine.c)(0x6B02E211)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\state_machine.o --omf_browse foc_control_1\state_machine.crf --depend foc_control_1\state_machine.d)
+F (..\Code\Motor_Configuration.h)(0x6B059A2E)()
+F (..\Code\state_machine.c)(0x6B05A2F6)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\state_machine.o --omf_browse foc_control_1\state_machine.crf --depend foc_control_1\state_machine.d)
 I (..\Code\state_machine.h)(0x6B02D8A5)
-I (..\Code\Foc_Algorithm.h)(0x6B01A7E5)
+I (..\Code\Foc_Algorithm.h)(0x6B05A304)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
 I (..\Code\Encoder.h)(0x6AFEC145)
 I (..\Code\TdTracker.h)(0x6AFF0DFE)
-I (..\Code\myadc.h)(0x6B03B515)
+I (..\Code\myadc.h)(0x6B05A318)
 I (..\Code\HardWare_Driver.h)(0x6AFDAD71)
-I (..\Code\Motor_Configuration.h)(0x6B004577)
+I (..\Code\Motor_Configuration.h)(0x6B059A2E)
 F (..\Code\state_machine.h)(0x6B02D8A5)()
 F (..\Code\Encoder.c)(0x6AFE6D12)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\encoder.o --omf_browse foc_control_1\encoder.crf --depend foc_control_1\encoder.d)
 I (..\Code\Encoder.h)(0x6AFEC145)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
-I (..\Code\Motor_Configuration.h)(0x6B004577)
+I (..\Code\Motor_Configuration.h)(0x6B059A2E)
 I (D:\Keil5\ARM\ARMCC\include\math.h)(0x5E8E3CC2)
 F (..\Code\Encoder.h)(0x6AFEC145)()
 F (..\Code\TdTracker.c)(0x6AFF1199)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\tdtracker.o --omf_browse foc_control_1\tdtracker.crf --depend foc_control_1\tdtracker.d)
 I (..\Code\TdTracker.h)(0x6AFF0DFE)
 F (..\Code\TdTracker.h)(0x6AFF0DFE)()
-F (..\Code\myadc.c)(0x6B05433D)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\myadc.o --omf_browse foc_control_1\myadc.crf --depend foc_control_1\myadc.d)
-I (..\Code\myadc.h)(0x6B03B515)
+F (..\Code\myadc.c)(0x6B05A304)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\myadc.o --omf_browse foc_control_1\myadc.crf --depend foc_control_1\myadc.d)
+I (..\Code\myadc.h)(0x6B05A318)
 I (D:\Keil5\ARM\ARMCC\include\stdint.h)(0x5E8E3CC2)
+I (..\Code\FOC_Algorithm.h)(0x6B05A304)
 I (../Core/Inc/adc.h)(0x6B01C1E2)
 I (../Core/Inc/main.h)(0x6AF7FF25)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h)(0x6AED4199)
@@ -1359,10 +1360,9 @@ I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h)(0x6AED4199)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h)(0x6AED4199)
 I (../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h)(0x6AED4199)
 I (..\Code\state_machine.h)(0x6B02D8A5)
-I (..\Code\Foc_Algorithm.h)(0x6B01A7E5)
 I (..\Code\Encoder.h)(0x6AFEC145)
 I (..\Code\TdTracker.h)(0x6AFF0DFE)
-F (..\Code\myadc.h)(0x6B03B515)()
+F (..\Code\myadc.h)(0x6B05A318)()
 F (..\Code\Pid.c)(0x6B058E61)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\pid.o --omf_browse foc_control_1\pid.crf --depend foc_control_1\pid.d)
 F (..\Code\Pid.h)(0x6B058E70)()
 F (../USB_Device/Target/usbd_conf.c)(0x6AF800C9)(--c99 -c --cpu Cortex-M4.fp.sp -D__MICROLIB -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc -I ../Drivers/STM32G4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32G4xx/Include -I ../Drivers/CMSIS/Include -I ../Code -I ../USB_Device/App -I ../USB_Device/Target -I ../Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I ../Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Inc-I.\RTE\_FOC_Control_1-ID:\Keil5\ARM\PACK\ARM\CMSIS\6.1.0\CMSIS\Core\Include-ID:\Keil5\ARM\PACK\Keil\STM32G4xx_DFP\1.6.0\Drivers\CMSIS\Device\ST\STM32G4xx\Include-D__UVISION_VERSION="540" -DSTM32G431xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32G431xx-o foc_control_1\usbd_conf.o --omf_browse foc_control_1\usbd_conf.crf --depend foc_control_1\usbd_conf.d)

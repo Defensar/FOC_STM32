@@ -37,6 +37,10 @@ void Motor_StateMachine_Run(Motor_Typedef *MotorState)
   default:
     break;
   }
+  ADC_Transform_Value(&MotorState->myadc_control, &MotorState->FOC);
+  Clarke_Transform(&MotorState->FOC);
+  Park_Transform(&MotorState->FOC);
+
   //Vf_SpeedControl_Update(&MotorState->Vf_Speed_Control,&MotorState->FOC.Theta);
 //  MotorState->FOC.Vd = 0.0f;
 //  MotorState->FOC.Vq = 0.0f;

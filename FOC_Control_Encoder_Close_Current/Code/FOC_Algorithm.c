@@ -8,8 +8,8 @@
  */
 void Rev_Park_Transform(FOC_Parameter_TypeDef *FOC_Parameter)
 {
-   FOC_Parameter->VAlpha = FOC_Parameter->Vd * cosf(FOC_Parameter->Theta) - FOC_Parameter->Vq * sinf(FOC_Parameter->Theta);
-   FOC_Parameter->VBeta = FOC_Parameter->Vd * sinf(FOC_Parameter->Theta) + FOC_Parameter->Vq * cosf(FOC_Parameter->Theta);
+    FOC_Parameter->VAlpha = FOC_Parameter->Vd * cosf(FOC_Parameter->Theta) - FOC_Parameter->Vq * sinf(FOC_Parameter->Theta);
+    FOC_Parameter->VBeta = FOC_Parameter->Vd * sinf(FOC_Parameter->Theta) + FOC_Parameter->Vq * cosf(FOC_Parameter->Theta);
 }
 
 /**
@@ -22,6 +22,25 @@ void Rev_Clarke_Transform(FOC_Parameter_TypeDef *FOC_Parameter)
     FOC_Parameter->Vu = FOC_Parameter->VAlpha;
     FOC_Parameter->Vv = -0.5f * FOC_Parameter->VAlpha + 0.866f * FOC_Parameter->VBeta;
     FOC_Parameter->Vw = -0.5f * FOC_Parameter->VAlpha - 0.866f * FOC_Parameter->VBeta;
+}
+
+/* 电流 Park 变换，Theta 使用与反帕克变换相同的电角度（弧度）。 */
+void Park_Transform(FOC_Parameter_TypeDef *FOC_Parameter)
+{
+    const float cos_theta = cosf(FOC_Parameter->Theta);
+    const float sin_theta = sinf(FOC_Parameter->Theta);
+
+    FOC_Parameter->Id = FOC_Parameter->IAlpha * cos_theta + FOC_Parameter->IBeta * sin_theta;
+    FOC_Parameter->Iq = FOC_Parameter->IBeta * cos_theta - FOC_Parameter->IAlpha * sin_theta;
+}
+
+/* 三相等幅值 Clarke 变换，α 轴与 U 相重合。 */
+void Clarke_Transform(FOC_Parameter_TypeDef *FOC_Parameter)
+{
+    const float inv_sqrt_3 = 0.57735026919f;
+
+    FOC_Parameter->IAlpha = (2.0f * FOC_Parameter->Iu - FOC_Parameter->Iv - FOC_Parameter->Iw) * (1.0f / 3.0f);
+    FOC_Parameter->IBeta = (FOC_Parameter->Iv - FOC_Parameter->Iw) * inv_sqrt_3;
 }
 
 /**

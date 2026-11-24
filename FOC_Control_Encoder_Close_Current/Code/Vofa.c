@@ -37,10 +37,12 @@ void Vofa_Send_Task(void)
 //  	VofaSend.Send_Data_Array[3] = MotorSystem.myadc_control.Va_Raw;
 //    VofaSend.Send_Data_Array[4] = MotorSystem.myadc_control.Vb_Raw;
 //    VofaSend.Send_Data_Array[5] = MotorSystem.myadc_control.Vc_Raw;
-	VofaSend.Send_Data_Array[0] = MotorSystem.myadc_control.Ia;
-	VofaSend.Send_Data_Array[1] = MotorSystem.myadc_control.Ib;
-    VofaSend.Send_Data_Array[2] = MotorSystem.myadc_control.Ic;
-  	VofaSend.Send_Data_Array[3] = MotorSystem.myadc_control.Va;
+	VofaSend.Send_Data_Array[0] = MotorSystem.FOC.Id;
+	VofaSend.Send_Data_Array[1] = MotorSystem.FOC.Iq;
+//	VofaSend.Send_Data_Array[1] = MotorSystem.myadc_control.Ib;
+    VofaSend.Send_Data_Array[2] = MotorSystem.FOC.IAlpha;
+		VofaSend.Send_Data_Array[3] = MotorSystem.FOC.IBeta;
+//  	VofaSend.Send_Data_Array[3] = MotorSystem.myadc_control.Va;
     VofaSend.Send_Data_Array[4] = MotorSystem.myadc_control.Vb;
     VofaSend.Send_Data_Array[5] = MotorSystem.myadc_control.Vc;
 	VofaSend.Send_Data_Array[7] = MotorSystem.myadc_control.Va_Raw - MotorSystem.myadc_control.Vb_Raw;

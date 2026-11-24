@@ -1,6 +1,7 @@
 foc_control_1\myadc.o: ..\Code\myadc.c
 foc_control_1\myadc.o: ..\Code\myadc.h
 foc_control_1\myadc.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+foc_control_1\myadc.o: ..\Code\FOC_Algorithm.h
 foc_control_1\myadc.o: ../Core/Inc/adc.h
 foc_control_1\myadc.o: ../Core/Inc/main.h
 foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal.h
@@ -41,6 +42,5 @@ foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.
 foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
 foc_control_1\myadc.o: ..\Code\state_machine.h
-foc_control_1\myadc.o: ..\Code\Foc_Algorithm.h
 foc_control_1\myadc.o: ..\Code\Encoder.h
 foc_control_1\myadc.o: ..\Code\TdTracker.h
