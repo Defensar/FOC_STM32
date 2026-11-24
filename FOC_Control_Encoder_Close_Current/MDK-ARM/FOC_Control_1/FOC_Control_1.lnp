@@ -38,6 +38,7 @@
 "foc_control_1\encoder.o"
 "foc_control_1\tdtracker.o"
 "foc_control_1\myadc.o"
+"foc_control_1\pid.o"
 "foc_control_1\usbd_conf.o"
 "foc_control_1\usb_device.o"
 "foc_control_1\usbd_desc.o"

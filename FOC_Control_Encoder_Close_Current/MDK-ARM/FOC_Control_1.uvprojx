@@ -1154,6 +1154,16 @@
               <FileType>5</FileType>
               <FilePath>..\Code\myadc.h</FilePath>
             </File>
+            <File>
+              <FileName>Pid.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Code\Pid.c</FilePath>
+            </File>
+            <File>
+              <FileName>Pid.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\Code\Pid.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
