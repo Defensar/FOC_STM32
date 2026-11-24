@@ -1,0 +1,9 @@
+foc_control_1\state_machine.o: ..\Code\state_machine.c
+foc_control_1\state_machine.o: ..\Code\state_machine.h
+foc_control_1\state_machine.o: ..\Code\Foc_Algorithm.h
+foc_control_1\state_machine.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
+foc_control_1\state_machine.o: ..\Code\Encoder.h
+foc_control_1\state_machine.o: ..\Code\TdTracker.h
+foc_control_1\state_machine.o: ..\Code\myadc.h
+foc_control_1\state_machine.o: ..\Code\HardWare_Driver.h
+foc_control_1\state_machine.o: ..\Code\Motor_Configuration.h
