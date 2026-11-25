@@ -41,7 +41,3 @@ foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi.h
 foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_spi_ex.h
 foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim.h
 foc_control_1\myadc.o: ../Drivers/STM32G4xx_HAL_Driver/Inc/stm32g4xx_hal_tim_ex.h
-foc_control_1\myadc.o: ..\Code\state_machine.h
-foc_control_1\myadc.o: ..\Code\Encoder.h
-foc_control_1\myadc.o: ..\Code\TdTracker.h
-foc_control_1\myadc.o: ..\Code\Pid.h

@@ -3,8 +3,14 @@
 #include "HardWare_Driver.h"
 void Motor_HardWare_Init(void)
 {
-  Motor_Enable_PWM();
-	__HAL_TIM_ENABLE_IT(&htim1,TIM_IT_CC4);
+  /* Only CC4 runs during current offset calibration. Preload zero line voltage. */
+  uint16_t neutral = (uint16_t)(__HAL_TIM_GET_AUTORELOAD(&htim1) / 2U);
+  Motor_Disable_PWM();
+  Motor_SetPWM(neutral, neutral, neutral);
+  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4) != HAL_OK)
+  {
+    Error_Handler();
+  }
 }
 
 void Motor_Enable_PWM(void)
@@ -15,7 +21,6 @@ void Motor_Enable_PWM(void)
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_1);
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_2);
   HAL_TIMEx_PWMN_Start(&htim1,TIM_CHANNEL_3);
-  HAL_TIM_PWM_Start(&htim1,TIM_CHANNEL_4);
 }
 
 void Motor_Disable_PWM(void)

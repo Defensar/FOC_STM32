@@ -21,11 +21,18 @@ typedef struct
     float Vb;
     float Vc;
 	  float VBUS;
+
+    float Ia_Offset;  /* ADC counts, valid when OffsetReady is set. */
+    float Ib_Offset;
+    float Ic_Offset;
+    uint16_t OffsetSampleCount;
+    uint8_t OffsetReady;
 }myadc_Typedef;
 
 
 
-void ADC_Init(void);
+void ADC_Init(myadc_Typedef *adc);
+void ADC_CalibrateOffset(myadc_Typedef *adc);
 void ADC_RUN(myadc_Typedef *myadc_getvalue);
 void ADC_Transform_Value(myadc_Typedef *myadc_getvalue,FOC_Parameter_TypeDef *FOC);
 

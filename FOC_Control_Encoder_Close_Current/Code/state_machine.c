@@ -8,7 +8,7 @@ Motor_Typedef MotorSystem;
 
 void Motor_StateMachine_Init(Motor_Typedef *MotorState)
 {
-  ADC_Init();
+  ADC_Init(&MotorState->myadc_control);
   Motor_Udc_TPWM(&MotorState->FOC);
   SpeedControl_Param_Init(&MotorState->Vf_Speed_Control,50,0,0.001f,Timer_Ts);
   Encoder_Para_Init(&MotorState->Encoder_Control,Encoder_Line,0,Motor_pn,3263);
@@ -21,6 +21,15 @@ void Motor_StateMachine_Init(Motor_Typedef *MotorState)
 void Motor_StateMachine_Run(Motor_Typedef *MotorState)
 {
   uint32_t Pulse_Data;
+  if (!MotorState->myadc_control.OffsetReady)
+  {
+    ADC_CalibrateOffset(&MotorState->myadc_control);
+    if (MotorState->myadc_control.OffsetReady)
+    {
+      Motor_Enable_PWM();
+    }
+    return;
+  }
   Pulse_Data = MT6701_ReadData();
 	Encoder_Para_Run(&MotorState->Encoder_Control,Pulse_Data);
   //角度模式选择
