@@ -62,3 +62,4 @@ foc_control_1\vofa.o: ..\Code\Encoder.h
 foc_control_1\vofa.o: ..\Code\state_machine.h
 foc_control_1\vofa.o: ..\Code\TdTracker.h
 foc_control_1\vofa.o: ..\Code\myadc.h
+foc_control_1\vofa.o: ..\Code\Pid.h

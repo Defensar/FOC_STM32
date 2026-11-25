@@ -44,3 +44,4 @@ foc_control_1\stm32g4xx_it.o: ../Code/Foc_Algorithm.h
 foc_control_1\stm32g4xx_it.o: ../Code/Encoder.h
 foc_control_1\stm32g4xx_it.o: ../Code/TdTracker.h
 foc_control_1\stm32g4xx_it.o: ../Code/myadc.h
+foc_control_1\stm32g4xx_it.o: ../Code/Pid.h

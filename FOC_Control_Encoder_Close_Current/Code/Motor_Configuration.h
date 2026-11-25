@@ -13,5 +13,5 @@
 
 #define Encoder_Line 16383
 
-#define Motor_pn 10
+#define Motor_pn 10 //电机极对数
 #endif

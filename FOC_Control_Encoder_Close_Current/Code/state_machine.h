@@ -6,6 +6,7 @@
 #include "Encoder.h"
 #include "TdTracker.h"
 #include "myadc.h"
+#include "Pid.h"
 
 
 typedef struct 
@@ -16,6 +17,7 @@ typedef struct
   Encoder_Typedef Encoder_Control;
   TdTracker_Typedef TdTracker_Uq;
   myadc_Typedef myadc_control;
+  Pid_Parameter_Typedef Pid_control;
 }Motor_Typedef;
 
 void Motor_StateMachine_Init(Motor_Typedef *MotorState);

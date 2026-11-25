@@ -5,5 +5,6 @@ foc_control_1\state_machine.o: D:\Keil5\ARM\ARMCC\Bin\..\include\stdint.h
 foc_control_1\state_machine.o: ..\Code\Encoder.h
 foc_control_1\state_machine.o: ..\Code\TdTracker.h
 foc_control_1\state_machine.o: ..\Code\myadc.h
+foc_control_1\state_machine.o: ..\Code\Pid.h
 foc_control_1\state_machine.o: ..\Code\HardWare_Driver.h
 foc_control_1\state_machine.o: ..\Code\Motor_Configuration.h

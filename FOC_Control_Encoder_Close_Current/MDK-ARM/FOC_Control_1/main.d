@@ -64,3 +64,4 @@ foc_control_1\main.o: ../Code/Encoder.h
 foc_control_1\main.o: ../Code/state_machine.h
 foc_control_1\main.o: ../Code/TdTracker.h
 foc_control_1\main.o: ../Code/myadc.h
+foc_control_1\main.o: ../Code/Pid.h

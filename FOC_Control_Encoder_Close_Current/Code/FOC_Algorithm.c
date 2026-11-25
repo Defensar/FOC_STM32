@@ -324,8 +324,8 @@ void Motor_Voltage_Update(FOC_Parameter_TypeDef *FOC_Parameter)
 {
     Rev_Park_Transform(FOC_Parameter);
     Rev_Clarke_Transform(FOC_Parameter);
-    //Zero_Input(FOC_Parameter);
-    SVPWM_Select_PWM2(FOC_Parameter);
+    Zero_Input(FOC_Parameter);
+    //SVPWM_Select_PWM2(FOC_Parameter);
 }
 
 void SpeedControl_Param_Init(Vf_Speed_Control_TypeDef *Vf_Speed_Control,uint16_t Acc,uint16_t Speed,float Dead_Zone,float Ts)
