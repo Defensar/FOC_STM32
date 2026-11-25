@@ -247,20 +247,20 @@ void TIM1_CC_IRQHandler(void)
 }
 
 /* USER CODE BEGIN 1 */
-void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
-{
-  if(htim->Instance == TIM1 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_4)
-  {
-    Motor_StateMachine_Run(&MotorSystem);
-  }
-}
+//void HAL_TIM_PWM_PulseFinishedCallback(TIM_HandleTypeDef *htim)
+//{
+//  if(htim->Instance == TIM1 && htim->Channel == HAL_TIM_ACTIVE_CHANNEL_4)
+//  {
+//    Motor_StateMachine_Run(&MotorSystem);
+//  }
+//}
 
 void HAL_ADCEx_InjectedConvCpltCallback(ADC_HandleTypeDef *hadc)
 {
   if(hadc->Instance == ADC1)
   {
     ADC_RUN(&MotorSystem.myadc_control);
-//		Motor_StateMachine_Run(&MotorSystem);
+		Motor_StateMachine_Run(&MotorSystem);
   }
 
 }
