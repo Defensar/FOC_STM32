@@ -1,16 +1,16 @@
 #include "myadc.h"
 #include "adc.h"
 
-#define ADC_OFFSET_SETTLE_SAMPLES 32U
-#define ADC_OFFSET_AVERAGE_SAMPLES 256U
+#define ADC_OFFSET_SETTLE_SAMPLES 32
+#define ADC_OFFSET_AVERAGE_SAMPLES 256
 
 static void ADC_ResetOffset(myadc_Typedef *adc)
 {
     adc->Ia_Offset = 0.0f;
     adc->Ib_Offset = 0.0f;
     adc->Ic_Offset = 0.0f;
-    adc->OffsetSampleCount = 0U;
-    adc->OffsetReady = 0U;
+    adc->OffsetSampleCount = 0;
+    adc->OffsetReady = 0;
 }
 
 void ADC_Init(myadc_Typedef *adc)
@@ -28,9 +28,9 @@ void ADC_Init(myadc_Typedef *adc)
 /* Called once per injected sequence, with all three phase outputs disabled. */
 void ADC_CalibrateOffset(myadc_Typedef *adc)
 {
-    if (adc->Ia_Raw == 0U || adc->Ia_Raw >= 4095U ||
-        adc->Ib_Raw == 0U || adc->Ib_Raw >= 4095U ||
-        adc->Ic_Raw == 0U || adc->Ic_Raw >= 4095U)
+    if (adc->Ia_Raw == 0 || adc->Ia_Raw >= 4095 ||
+        adc->Ib_Raw == 0 || adc->Ib_Raw >= 4095 ||
+        adc->Ic_Raw == 0 || adc->Ic_Raw >= 4095)
     {
         ADC_ResetOffset(adc);
         return;
@@ -50,7 +50,7 @@ void ADC_CalibrateOffset(myadc_Typedef *adc)
         adc->Ia_Offset /= ADC_OFFSET_AVERAGE_SAMPLES;
         adc->Ib_Offset /= ADC_OFFSET_AVERAGE_SAMPLES;
         adc->Ic_Offset /= ADC_OFFSET_AVERAGE_SAMPLES;
-        adc->OffsetReady = 1U;
+        adc->OffsetReady = 1;
     }
 }
 void ADC_RUN(myadc_Typedef *myadc_getvalue)
@@ -64,9 +64,9 @@ void ADC_RUN(myadc_Typedef *myadc_getvalue)
     if (myadc_getvalue->OffsetReady)
     {
         const float amps_per_count = (3.3f / 4096.0f) / (0.001f * 20.0f);
-        myadc_getvalue->Ia = (myadc_getvalue->Ia_Raw - myadc_getvalue->Ia_Offset) * amps_per_count;
-        myadc_getvalue->Ib = (myadc_getvalue->Ib_Raw - myadc_getvalue->Ib_Offset) * amps_per_count;
-        myadc_getvalue->Ic = (myadc_getvalue->Ic_Raw - myadc_getvalue->Ic_Offset) * amps_per_count;
+        myadc_getvalue->Ia = (myadc_getvalue->Ia_Offset - myadc_getvalue->Ia_Raw) * amps_per_count;
+        myadc_getvalue->Ib = (myadc_getvalue->Ib_Offset - myadc_getvalue->Ib_Raw) * amps_per_count;
+        myadc_getvalue->Ic = (myadc_getvalue->Ic_Offset - myadc_getvalue->Ic_Raw) * amps_per_count;
     }
 }
 

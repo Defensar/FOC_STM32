@@ -11,7 +11,7 @@
 #define Timer_frequency 20000
 #define Timer_Ts (1/(float)Timer_frequency)
 
-#define Encoder_Line 16383
+#define Encoder_Line 16384
 
 #define Motor_pn 10 //电机极对数
 #endif

@@ -17,10 +17,11 @@ void Vofa_Send_Task(void)
     /* 填入需要发送的数据 */
 //    VofaSend.Send_Data_Array[0] = MotorSystem.FOC.Theta;
 //	  VofaSend.Send_Data_Array[1] = MotorSystem.Encoder_Control.Theta;
-	   VofaSend.Send_Data_Array[0] = MotorSystem.Pid_control.Current_Target_Id;
+	   VofaSend.Send_Data_Array[0] = MotorSystem.Pid_control.Current_Target_Iq;
 	  VofaSend.Send_Data_Array[1] = MotorSystem.Pid_control.Current_Actual_Iq;
 		VofaSend.Send_Data_Array[3] = MotorSystem.Pid_control.Current_Actual_Id;
-	  VofaSend.Send_Data_Array[4] = MotorSystem.FOC.Vq;
+		VofaSend.Send_Data_Array[4] = MotorSystem.Pid_control.Current_Target_Id;
+	  VofaSend.Send_Data_Array[5] = MotorSystem.FOC.Vq;
     //VofaSend.Send_Data_Array[1] = MotorSystem.Encoder_Control.Pulse_Data;
 //	  VofaSend.Send_Data_Array[0] = MotorSystem.FOC.Vq;
 //    VofaSend.Send_Data_Array[1] = MotorSystem.TdTracker_Uq.Input;
@@ -43,7 +44,7 @@ void Vofa_Send_Task(void)
 //    VofaSend.Send_Data_Array[5] = MotorSystem.myadc_control.Vc_Raw;
 //	VofaSend.Send_Data_Array[3] = MotorSystem.myadc_control.Ia;
 //	VofaSend.Send_Data_Array[4] = MotorSystem.myadc_control.Ib;
-	VofaSend.Send_Data_Array[5] = MotorSystem.myadc_control.Ic;
+//	VofaSend.Send_Data_Array[5] = MotorSystem.myadc_control.Ic;
 //    VofaSend.Send_Data_Array[2] =MotorSystem.myadc_control.Ic;
 //		VofaSend.Send_Data_Array[3] = MotorSystem.FOC.IBeta;
 //  	VofaSend.Send_Data_Array[3] = MotorSystem.myadc_control.Va;
